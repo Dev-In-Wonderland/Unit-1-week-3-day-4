@@ -135,7 +135,7 @@ width: 100%;
  
 
 .task button {
-    background-color: #0a2ea4;
+    background-color: yellow;
     color: black;
     height: 100%;
     width:40px;
@@ -184,3 +184,10 @@ width: 100%;
       }
 
 
+#tasks p {
+    margin-top: 0em;
+    margin-bottom: 3em;
+    color:#0d75ec;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

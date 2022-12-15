@@ -14,7 +14,7 @@ document.querySelector('#push').onclick = function () {
          </span>
          
          <button class="delete">
-         X
+         
          </button>
          
          </div>
