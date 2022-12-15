@@ -121,7 +121,7 @@ body{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    Left: 50%;
     background: white;
     min-height: 100px;
 
@@ -137,7 +137,7 @@ body{
 #newtask input {
     width: 75%;
     height: 45px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     border: 2px solid #233452;
     padding: 12px;
