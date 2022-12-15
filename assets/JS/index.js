@@ -12,10 +12,14 @@ document.querySelector('#push').onclick = function () {
          <span id="taskname">
          ${document.querySelector('#list-item-input').value}
          </span>
+         
          <button class="delete">
          X
          </button>
-         </div>`
+         
+         </div>
+         
+         `
 
         let current_tasks = document.querySelectorAll(".delete")
         for (let i = 0; i < current_tasks.length; i++) {

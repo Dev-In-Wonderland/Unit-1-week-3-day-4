@@ -136,19 +136,38 @@ width: 100%;
 
 .task button {
     background-color: #0a2ea4;
-    color:#ffffff;
+    color: black;
     height: 100%;
     width:40px;
     border-radius:5px;
     border:none;
     cursor:pointer;
     outline:none
-    
+
 
 } 
 
-button .delete {
-    color: black
+.delete {
+    /* background-color: #c5e1e6;
+    height:50px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    color: black;
+    background-color: #0a2ea4;
+    color:#ffffff;
+    height: 100%;
+    width:40px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    outline:none;
+     */
 
 }
 
