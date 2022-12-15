@@ -13,7 +13,7 @@ document.querySelector('#push').onclick = function () {
          ${document.querySelector('#list-item-input').value}
          </span>
          <button class="delete">
-         CANC
+         X
          </button>
          </div>`
 
@@ -26,3 +26,12 @@ document.querySelector('#push').onclick = function () {
 
     }
 }
+
+
+
+
+
+
+document.getElementsByClassName = ("task").addEventListener("click")
+
+

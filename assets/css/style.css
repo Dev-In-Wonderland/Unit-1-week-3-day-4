@@ -143,9 +143,25 @@ width: 100%;
     border:none;
     cursor:pointer;
     outline:none
+    
 
 } 
 
 button .delete {
-    color: #ffffff;
+    color: black
+
 }
+
+
+
+.task:hover {
+        background-color: lightsalmon;
+      
+        box-shadow: 0 12px 24px -8px rgb(0 0 0 / 20%);
+        border-color: black;
+        transform: scale(1.2);
+        text-decoration: line-through;
+        
+      }
+
+
