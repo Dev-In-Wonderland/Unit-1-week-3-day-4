@@ -97,49 +97,106 @@
 
 
 
-document.querySelector("#push").onclick = function( ) {
-    if (document.querySelector('#newtask input').ariaValueMax.length == 0) {
-        alert("Please enter a task")
+// document.querySelector("#push").onclick = function( ) {
+//     if (document.querySelector('#newtask input').ariaValueMax.length == 0) {
+//         alert("Please enter a task")
         
-    }else{
+//     }else{
+//         document.querySelector('#tasks').innerHTML += `
+//         <div class="task">
+//         <span id="taskname"
+//         ${document.querySelector('#newtask input').value}
+//         </span>
+
+//         <button class="delete">
+
+//         <ion-icon name="trash-outline"></ion-icon>
+//         </button>
+//         </div>
+
+//         `
+//        let current_tasks = document.querySelectorAll(".delete")
+//        for (let index = 0; index < current_tasks.length; index++) {
+//         current_tasks[i].onclick = function(){
+//             this.parentNode.remove()
+//         }
+        
+//        }
+//     }
+// }
+
+
+
+
+
+
+
+// const aggiungiClasseSelected = (event) => {
+//     const elementoCliccato = event.target
+//     elementoCliccato.classList.toggle("selected")
+// }
+// const deleteTask = (event) => {
+//     const task = document.getElementById("list")
+//     const elemClick = event.target
+//     const classNum = Array.from(event.target.classList).join()
+//     const figlio = documetn.getElementByClassName(classNum)
+//     const figlioArray = Array.from(figlio)
+//     for (let index = 0; index < figlioArray.length; index++) {
+//         task.removeChild(figlioArray[index])
+//     }
+        
+//     }
+
+//     let i = 0
+//     const aggiungoTask =() => {
+//         const valoreInputField = document.getElementById("list-item-input").value
+//         if (valoreInputField === "") {
+//             alert ("Please add the magical words")
+            
+//         }else{
+//             const newDiv = document.createElement("li")
+//             const newButton = document.createlelement("button")
+//             newButton.classList.add(`${i}`)
+//             newDiv.classList.add("list-items")
+//             newDiv.classList.add(`${i}`)
+//             newDiv.innerText = valoreInputField
+//             newButton.onclick = deleteTask
+//             newDiv.onclick = aggiungiClasseSelected
+//             newDiv.appendChild(newButton)
+//             newButton.innerText = "delete"
+//             document.getElementById("list").appendChild(newDiv)
+//             document.getElementById("list-item-input").value = ""
+//             i++
+//         }
+//     }
+
+
+
+
+
+
+document.querySelector('#push').onclick = function () {
+    if (document.querySelector('#newtask input').value.length == 0) {
+        alert("Please enter a magical word!")
+        
+    }
+    else{
         document.querySelector('#tasks').innerHTML += `
         <div class="task">
-        <span id="taskname"
-        ${document.querySelector('#newtask input').value}
-        </span>
+         <span id="taskname">
+         ${document.querySelector('#list-item-input').value}
+         </span>
+         <button class="delete">
+         CANC
+         </button>
+         </div>`
 
-        <button class="delete">
-
-        <ion-icon name="trash-outline"></ion-icon>
-        </button>
-        </div>
-
-        `
-       let current_tasks = document.querySelectorAll(".delete")
-       for (let index = 0; index < current_tasks.length; index++) {
-        current_tasks[i].onclick = function(){
-            this.parentNode.remove()
-        }
-        
-       }
+        let current_tasks = document.querySelectorAll(".delete")
+        for (let i = 0; i < current_tasks.length; i++) {
+         current_tasks[i].onclick = function(){
+             this.parentNode.remove()
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+}
